@@ -1,0 +1,7 @@
+<h1>Import your excel file</h1>
+
+<%= form_tag import_excel_path, multipart: true, method: :post do %>
+    <%= file_field_tag :file %>
+    <%= submit_tag "Import", class: "btn btn-default" %>
+    <button type="button" class="btn btn-default">OK</button>
+<% end %>

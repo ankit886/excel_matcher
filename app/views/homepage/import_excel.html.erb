@@ -1,0 +1,14 @@
+<div class="summary">
+  <div class="main-json">
+    Main JSON
+    <pre><%= JSON.pretty_generate(@main_json[:main_json].as_json) %></pre>
+  </div>
+  <div class="gsp-json">
+    GSP JSON
+    <pre><%= JSON.pretty_generate(@main_json[:gsp_json].as_json) %></pre>
+  </div>
+  <div class="report-json">
+    Report
+    <pre><%= JSON.pretty_generate(@report.as_json) %></pre>
+  </div>
+</div>
